@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<title>राक्सिराङ्ग गाउँपालिका वडा नं. ४</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Kalimati, Arial, sans-serif;
+  background:#f0f2f5;
+}
+
+/* ================= HEADER ================= */
+.header{
+  background:linear-gradient(90deg,#8b0000,#ff3333);
+  color:#fff;
+  padding:15px;
+}
+.header-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.logo-box img{
+  width:80px;
+}
+.profile-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile-box img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:2px solid #fff;
+}
+.center-title{
+  text-align:center;
+  flex:1;
+  font-size:24px;
+  font-weight:bold;
+}
+
+/* ================= SCROLLING RIBBON ================= */
+.ribbon-wrap{
+  width:100%;
+  overflow:hidden;
+  background:#fff;
+  border-top:4px solid #8b0000;
+  border-bottom:4px solid #ff9933;
+}
+.ribbon-text{
+  display:inline-block;
+  white-space:nowrap;
+  padding-left:100%;
+  animation:ribbonScroll 25s linear infinite;
+  font-size:18px;
+  font-weight:bold;
+  color:#b30000;
+}
+.ribbon-text span{
+  margin-right:35px;
+  padding:6px 16px;
+  background:#ffe6e6;
+  border-radius:20px;
+}
+@keyframes ribbonScroll{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-100%);}
+}
+
+/* ================= SLOGAN ================= */
+.slogan-box{
+  max-width:1000px;
+  margin:20px auto;
+  background:linear-gradient(90deg,#ff9933,#ff3333);
+  color:#fff;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ================= PAGE ================= */
+.page-container{
+  max-width:1100px;
+  margin:20px auto;
+}
+.page{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.page h2{
+  border-left:8px solid #ff3333;
+  padding-left:10px;
+  color:#8b0000;
+}
+.page ul{
+  line-height:1.9;
+}
+
+/* ================= NOTICE ================= */
+.announcement{
+  background:#fff;
+  border-left:6px solid #ff9933;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+.announcement-content{
+  display:none;
+  margin-top:10px;
+}
+
+/* ================= MAP ================= */
+.map iframe{
+  width:100%;
+  height:350px;
+  border:0;
+  border-radius:12px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<div class="header">
+  <div class="header-flex">
+
+    <div class="logo-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_Nepal.svg/800px-Emblem_of_Nepal.svg.png">
+    </div>
+
+    <div class="profile-box">
+      <img src="https://i.ibb.co/9kM1tnfZ/IMG-20251217-WA0003.jpg">
+      <div>
+        सञ्जय कोइराला<br>
+        वडा अध्यक्ष<br>
+        📞 9855071025
+      </div>
+    </div>
+
+    <div class="center-title">
+      राक्सिराङ्ग गाउँपालिका<br>
+      वडा नं. ४
+    </div>
+
+    <div class="profile-box">
+      <div style="text-align:right">
+        राजेन्द्र सिंह बिष्ट<br>
+        वडा सचिव<br>
+        📞 9840234188
+      </div>
+      <img src="https://i.ibb.co/DgvrnPVy/image.jpg">
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= SCROLLING RIBBON ================= -->
+<div class="ribbon-wrap">
+  <div class="ribbon-text">
+    <span>📝 जन्म दर्ता</span>
+    <span>💍 विवाह दर्ता</span>
+    <span>⚖️ सम्बन्ध विच्छेद</span>
+    <span>🏠 बसाइँसराइ</span>
+    <span>🕊️ मृत्यु दर्ता</span>
+    <span>👵 सामाजिक सुरक्षा</span>
+    <span>📄 घटना दर्ता: सजिलो, छिटो, सुरक्षित!</span>
+  </div>
+</div>
+
+<!-- ================= SLOGAN ================= -->
+<div class="slogan-box" id="slogan"></div>
+
+<!-- ================= SERVICES ================= -->
+<div class="page-container">
+
+<div class="page">
+<h2>जन्म दर्ता – आवश्यक कागजात</h2>
+<ul>
+<li>आमा–बाबुको नागरिकता</li>
+<li>स्वास्थ्य संस्थाबाट जन्म प्रमाण</li>
+<li>सूचकको नागरिकता</li>
+</ul>
+</div>
+
+<div class="page">
+<h2>विवाह दर्ता – आवश्यक कागजात</h2>
+<ul>
+<li>पति–पत्नी दुवैको नागरिकता</li>
+<li>आमा–बाबुको नागरिकता</li>
+<li>दुवै पक्षको उपस्थित</li>
+</ul>
+</div>
+
+<div class="page">
+<h2>मृत्यु दर्ता – आवश्यक कागजात</h2>
+<ul>
+<li>मृतकको नागरिकता</li>
+<li>सूचकको नागरिकता</li>
+<li>मृत्यु प्रमाण</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= MAP ================= -->
+<div class="page-container">
+<div class="page map">
+<h2>📍 वडा नं. ४ को नक्सा</h2>
+<iframe src="https://www.google.com/maps?q=Raksirang%20Rural%20Municipality%20Ward%204&output=embed"></iframe>
+</div>
+</div>
+
+<!-- ================= NOTICE ================= -->
+<div class="page-container">
+<div class="page">
+<h2>📢 सूचना पाटी</h2>
+<form id="noticeForm">
+<input id="title" placeholder="सूचनाको शीर्षक" required><br><br>
+<textarea id="desc" placeholder="सूचनाको विवरण" required></textarea><br><br>
+<button>सूचना थप्नुहोस्</button>
+</form>
+</div>
+<div id="noticeContainer"></div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+राक्सिराङ्ग गाउँपालिका वडा नं. ४<br>
+Bagmati Province, Nepal
+</footer>
+
+<script>
+/* AUTO SLOGAN */
+const slogans=[
+"घटना दर्ता: सजिलो, छिटो, सुरक्षित!",
+"तपाईंको जीवनका महत्वपूर्ण घटनाहरू दर्ता गरौं स्मार्ट तरिकाले।",
+"सबै नागरिकका लागि घटना दर्ता अब एकै ठाउँमा!",
+"अधिकार तपाईंको, दर्ता अब सरल।",
+"स्मार्ट घटना दर्ता, सहज नागरिक सेवा।",
+"आफ्नो जन्म, विवाह, मृत्यु सबै दर्ता गर्नुहोस् सजिलै।"
+];
+let i=0;
+function changeSlogan(){
+document.getElementById("slogan").innerText=slogans[i];
+i=(i+1)%slogans.length;
+}
+changeSlogan();
+setInterval(changeSlogan,4000);
+
+/* NOTICE */
+noticeForm.onsubmit=e=>{
+e.preventDefault();
+const d=document.createElement("div");
+d.className="announcement";
+d.innerHTML=`<h3>${title.value}</h3>
+<div class="announcement-content"><p>${desc.value}</p></div>`;
+d.onclick=()=>{
+const c=d.querySelector(".announcement-content");
+c.style.display=c.style.display==="block"?"none":"block";
+}
+noticeContainer.prepend(d);
+noticeForm.reset();
+}
+</script>
+
+</body>
+</html>
